@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><title>Login</title></head>
+<body>
+<h2>ล็อกอินก่อนชม</h2>
+<form onsubmit="login(event)">
+  <input id="user" placeholder="Username"/><br/>
+  <input id="pass" type="password" placeholder="Password"/><br/>
+  <button>Login</button>
+</form>
+<script>
+function login(e) {
+  e.preventDefault();
+  if (document.getElementById('user').value==='admin' && document.getElementById('pass').value==='1234') {
+    localStorage.setItem('token','ok');
+    window.location='index.html';
+  } else alert('ผิดพลาด');
+}
+</script></body></html>
