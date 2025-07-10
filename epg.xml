@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="series_amazon">
+    <display-name>Series Amazon</display-name>
+  </channel>
+  <programme start="20250710150000 +0000" stop="20250710160000 +0000" channel="series_amazon">
+    <title>Amazon Original Show</title>
+  </programme>
+</tv>
