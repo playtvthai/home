@@ -1,7 +1,7 @@
 <html lang="th"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PLAYTV ONLINE</title>
+  <title>PLAYID STREAM IPTV</title>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&amp;display=swap" rel="stylesheet">
   <style>
 
@@ -132,11 +132,11 @@
     const categories = [
   {
     name: 'MONOMAX',
-    channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], // index จาก channelNames/playBaseUrls
+    channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], // index จาก channelNames/playBaseUrls
   },
   {
     name: 'SPORT',
-    channels: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
+    channels: [13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
   },
   {
     name: 'DIGITAL',
@@ -313,16 +313,19 @@
 
     const channelLogos = [
       'https://rentapi.blackboxsys.net/images/png/th-monomax01.png', 
-      'https://rentapi.blackboxsys.net/images/png/th-monomax02.png',
-      'https://rentapi.blackboxsys.net/images/png/th-monomax03.png', 
-       'https://rentapi.blackboxsys.net/images/png//th-monomax04.png',
-      'https://rentapi.blackboxsys.net/images/png/th-monomax05.png',           'https://rentapi.blackboxsys.net/images/png/th-monomax06.png', 
-      'https://rentapi.blackboxsys.net/images/png/th-monomax07.png', 
-      'https://rentapi.blackboxsys.net/images/png/th-monomax08.png',
-      'https://rentapi.blackboxsys.net/images/png/th-monomax09.png', 'https://rentapi.blackboxsys.net/images/png/th-monomax10.png',
-      'https://static.uflixtv.com/images/tv/png/epl-bein1.png', 'https://static.uflixtv.com/images/tv/png/epl-bein2.png',
-      'https://static.uflixtv.com/images/tv/png/epl-bein3.png', 'https://static.uflixtv.com/images/tv/png/hd-tsport1.png',
-      'https://static.uflixtv.com/images/tv/png/hd-tsport2.png', 'https://static.uflixtv.com/images/tv/png/hd-tsport3.png',
+      'https://rentapi.blackboxsys.net/images/png/th-monomax01.png',
+      'https://rentapi.blackboxsys.net/images/png/th-monomax02.png', 
+       'https://rentapi.blackboxsys.net/images/png//th-monomax02.png',
+      'https://rentapi.blackboxsys.net/images/png/th-monomax03.png',           'https://rentapi.blackboxsys.net/images/png/th-monomax03.png', 
+      'https://rentapi.blackboxsys.net/images/png/th-monomax04.png', 
+      'https://rentapi.blackboxsys.net/images/png/th-monomax04.png',
+      'https://rentapi.blackboxsys.net/images/png/th-monomax05.png', 'https://rentapi.blackboxsys.net/images/png/th-monomax05.png',
+      'https://static.uflixtv.com/images/tv/png/th-monomax06.png', 
+	  'https://static.uflixtv.com/images/tv/png/th-monomax07.png',
+      'https://static.uflixtv.com/images/tv/png/th-monomax08.png', 
+	  'https://static.uflixtv.com/images/tv/png/th-monomax09.png',
+      'https://static.uflixtv.com/images/tv/png/th-monomax10.png', 
+	  'https://static.uflixtv.com/images/tv/png/th-monomax11.png',
       'https://static.uflixtv.com/images/tv/channels_icons/hd-tsport4.png',
       'https://static.uflixtv.com/images/tv/channels_icons/sd-tsport5.png',
       'https://static.uflixtv.com/images/tv/channels_icons/sd-tsport7.png',
@@ -457,24 +460,25 @@
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max03-fhd&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max03-hd&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max04-fhd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max04-hd&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max05-fhd&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max06-fhd&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max07-fhd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max05-hd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max06-hd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max07-hd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max08-hd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max09-hd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max10-hd&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-max11-hd&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-bein1&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-bein1&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=epl-bein1&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-bein2&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-bein3&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-tsporthd1&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-tsporthd2&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-tsporthd3&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=hd-tsport4&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-tsport5&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-tsport7&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-spotv1&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-spotv2&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=epl-bein3&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-max-sports1&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=epl-3&kauth=',
-      'https://cloud.ufxtv.com/api/tv/channels/play/?c=epl-4&kauth=',
-      
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-spotv&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-spotv&kauth=',
+	   'https://cloud.ufxtv.com/api/tv/channels/play/?c=uflix-spotv2&kauth=',
+      'https://cloud.ufxtv.com/api/tv/channels/play/?c=th-spotv2&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=hd-tennis&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=hd-golf2&kauth=',
       'https://cloud.ufxtv.com/api/tv/channels/play/?c=hd-bein11&kauth=',
@@ -658,7 +662,7 @@ function showChannelsInCategory(catIndex) {
   // เพิ่มปุ่มย้อนกลับ
   const backBtn = document.createElement('div');
   backBtn.classList.add('channel-button');
-  backBtn.innerHTML = '🔙 ย้อนกลับ';
+  backBtn.innerHTML = 'back';
   backBtn.tabIndex = 0;
   backBtn.onclick = renderCategories;
   backBtn.onkeydown = (e) => {
@@ -783,7 +787,7 @@ let session = null;
     return;
   }
   if (channelNames[index] === 'EPL 1 BLUE') {
-    const iframeUrl = 'http://tbtv.me:2095/play/live.php?mac=00:1a:79:80:09:03&stream=186561&extension=m3u8';
+    const iframeUrl = 'https://m1free.inwstream.com:1936/movie4/BraveStorm_2017/BraveStorm_2017_st_1080.mp4/playlist.m3u8';
     loadChannel(iframeUrl, false); // ไม่ต้อง await ถ้า loadChannel ไม่เป็น async ก็ได้
     return;
   }
